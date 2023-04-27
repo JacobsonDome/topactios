@@ -1,4 +1,4 @@
-name: hello-world4
+name: hello-world t
 on: push
 jobs:
   my-jobs:
@@ -9,4 +9,4 @@ jobs:
         run: |
            echo "${{secrets.TOPACTIOS}}" | docker login -u "santosch" --password-stdin
            docker image build -t santosch/topactios:v${{ github.run_number }} .
-           docker push santosch/topactions:v${{ github.run_number }}
+           docker push santosch/topactios:v${{ github.run_number }}
